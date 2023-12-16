@@ -79,6 +79,10 @@ a:hover {
   outline: none;
 }
 
+h1 {
+  font-family: "Russo One", sans-serif;
+}
+
 /*-- //Reset Code --*/
 
 #toTop {
@@ -335,6 +339,9 @@ ul.footer_list_icons li {
 ul.footer_list_icons.team_icons li a {
   color: #30c39e;
 }
+
+
+
 
 /*-- //team --*/
 
