@@ -343,6 +343,52 @@ ul.footer_list_icons.team_icons li a {
 
 
 
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 17%;
+  float: left;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  margin-left: 54px;
+  margin-right: 35px;
+  margin-top: 15px;
+}
+.testimonial-item.equal-height.style-6 {
+  background-color: #eee;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+.cell-right {
+  text-align: center;
+  margin-right: 80px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.testimonial-name {
+  font-weight: 600;
+  color: #30c39e;
+}
+.testimonial-job{
+  color: #f85a40;
+}
+.testimonial-content.quote {
+  padding: 17px 55px;
+}
+.et_right_sidebar #main-content .container:before{
+  display: none;
+}
+#main-content .container {
+  padding-top: 10px;
+}
+i.fa.fa-quote-left {
+  padding: 0px 10px;
+  color: #f85a40;
+}
+
+
+
 /*-- //team --*/
 
 /*-- video section --*/
