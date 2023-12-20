@@ -74,3 +74,10 @@ $(document).ready(function(){
       autoPlay:true
   });
 });
+
+
+function showGallery() {
+  var gallery = document.querySelector('.gallery-container');
+  gallery.style.display = (gallery.style.display === 'none' || gallery.style.display === '') ? 'block' : 'none';
+}
+

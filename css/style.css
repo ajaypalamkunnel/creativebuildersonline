@@ -1,8 +1,9 @@
 /*--
-Author: W3layouts
-Author URL: http://w3layouts.com
+<!--A Design by Console Technologies
+Author: Console Technologies
 License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+License URL: Console Technologies
+-->
 --*/
 
 /*-- Reset Code --*/
@@ -485,6 +486,7 @@ a.image-gal {
 /*-- news --*/
 
 .news_grid1 {
+  
   background: url(../images/n1.jpg) no-repeat 0px 0px;
   background-size: cover;
   min-height: 300px;
@@ -502,56 +504,7 @@ a.image-gal {
   transform: scale(1.1); /* Scale the image on hover */
 }
 
-.news_grid2 {
-  background: url(../images/n2.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 300px;
-  background-position: 50% 50%;
-  -webkit-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-}
-.news_grid3 {
-  background: url(../images/n3.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 300px;
-  background-position: 50% 50%;
-  -webkit-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-}
-.news_grid4 {
-  background: url(../images/n4.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 300px;
-  background-position: 50% 50%;
-  -webkit-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-}
-.news_grid5 {
-  background: url(../images/n5.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 300px;
-  background-position: 50% 50%;
-  -webkit-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-}
-.news_grid6 {
-  background: url(../images/n6.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 300px;
-  background-position: 50% 50%;
-  -webkit-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-}
+
 .news_grid_info {
   background: rgba(255, 255, 255, 0.59);
   border: 4px solid #e2e2e2;
@@ -602,6 +555,35 @@ a.image-gal {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+
+/* Your existing CSS styles remain unchanged */
+
+.gallery-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .news_grid_info {
+      height: auto;
+  }
+
+  .gallery-container img {
+      margin-bottom: 5px;
+  }
+}
+
+
+
 /*-- //news --*/
 /*-- stats --*/
 .title-heading-stats {
