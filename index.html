@@ -37,6 +37,7 @@ License URL: Console Technologies
       type="text/css"
       media="all"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- gallery css -->
     <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
     <!-- stylesheets-->
@@ -1445,10 +1446,12 @@ License URL: Console Technologies
           <div class="col-lg-8 col-sm-6">
             <div class="contact-middle">
               <h3>Write to Us</h3>
-              <form action="#" method="post">
+
+              <form id="submit-form" action="" >
                 <div class="form-group">
                   <label>Name</label>
                   <input
+                  id="fname"
                     type="text"
                     class="form-control"
                     placeholder="First name"
@@ -1462,15 +1465,17 @@ License URL: Console Technologies
                     class="form-control"
                     placeholder="Email"
                     required=""
+                    id="lname"
                   />
                 </div>
                 <div class="form-group">
                   <label>Mob</label>
                   <input
-                    type="email"
+                    type="number"
                     class="form-control"
-                    placeholder="Email"
+                    placeholder="Mobile"
                     required=""
+                    id="country"
                   />
                 </div>
                 <div class="form-group">
@@ -1479,6 +1484,7 @@ License URL: Console Technologies
                     class="form-control"
                     rows="3"
                     required=""
+                    id="subject"
                   ></textarea>
                 </div>
                 <button type="submit" class="btn btn-2">Submit</button>
@@ -1735,5 +1741,25 @@ License URL: Console Technologies
     <!-- video js (background) -->
     <script src="js/jquery.vide.min.js"></script>
     <!-- //video js (background) -->
+
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycby1T8tcjkYbf0SWiYUkMxJaWYBZvjGYZpD_EN802r_T4LwPjtNSmkKgoIIRT5DfuV7L/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>
