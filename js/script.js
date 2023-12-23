@@ -47,7 +47,6 @@ jQuery(document).ready(function ($) {
   } //if quicksand
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const readMoreLink = document.querySelector(".read-more");
   const readMoreContent = document.querySelector(".read-more-content");
@@ -59,25 +58,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-$(document).ready(function(){
+$(document).ready(function () {
   $("#testimonial-slider").owlCarousel({
-      items:2,
-      itemsDesktop:[1000,2],
-      itemsDesktopSmall:[980,1],
-      itemsTablet:[768,1],
-      pagination:true,
-      navigation:true,
-      navigationText:["<",">"],
-      autoPlay:true
+    items: 2,
+    itemsDesktop: [1000, 2],
+    itemsDesktopSmall: [980, 1],
+    itemsTablet: [768, 1],
+    pagination: true,
+    navigation: true,
+    navigationText: ["<", ">"],
+    autoPlay: true,
   });
 });
 
-
 function showGallery() {
-  var gallery = document.querySelector('.gallery-container');
-  gallery.style.display = (gallery.style.display === 'none' || gallery.style.display === '') ? 'block' : 'none';
+  var gallery = document.querySelector(".gallery-container");
+  gallery.style.display =
+    gallery.style.display === "none" || gallery.style.display === ""
+      ? "block"
+      : "none";
 }
-
