@@ -78,3 +78,10 @@ function showGallery() {
       ? "block"
       : "none";
 }
+function showGallery2() {
+  var gallery = document.querySelector(".gallery-container2");
+  gallery.style.display =
+    gallery.style.display === "none" || gallery.style.display === ""
+      ? "block"
+      : "none";
+}
